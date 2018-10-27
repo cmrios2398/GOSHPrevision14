@@ -29,6 +29,52 @@ html, body, .container {
   grid-template-rows: auto calc(var(--phone-screen-height) + var(--phone-border) * 2) auto;
 }
 
+.left-hand {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url("img/left_hand.png");
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.right-hand {
+  background-repeat: no-repeat;
+}
+
+.right-hand.left-of-phone {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url("img/right_hand_left.png");
+  background-position: center right;
+}
+
+.right-hand.right-of-phone {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url("img/right_hand_right_top.png");
+  background-position: bottom left;
+}
+
+.right-hand.below-phone {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image: url("img/right_hand_middle_bottom.png");
+  background-position: top right;
+}
+
+.right-hand.below-right-of-phone {
+  grid-column-start: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-image: url("img/right_hand_right_bottom.png");
+  background-position: top left;
+}
+
 .phone {
   grid-column-start: 2;
   grid-row-start: 2;
