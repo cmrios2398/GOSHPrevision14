@@ -18,7 +18,7 @@ html, body, .container {
   height: calc(100% + (var(--blur) * 4));
   top: calc(-1 * (var(--blur) * 2));
   left: calc(-1 * (var(--blur) * 2));
-  z-index: -1;
+  z-index: -2;
   position: fixed;
   filter: blur(var(--blur));
 }
@@ -75,6 +75,14 @@ html, body, .container {
   background-position: top left;
 }
 
+.right-hand.behind-phone {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  background-image: url("img/right_hand_middle_top.png");
+  background-position: bottom right;
+  z-index: -1;
+}
+
 .phone {
   grid-column-start: 2;
   grid-row-start: 2;
@@ -86,6 +94,7 @@ html, body, .container {
   background: #fff;
   border: var(--phone-border) #000 solid;
   box-sizing: border-box;
+  border-radius: 30px;
 }
 
 .commands {
