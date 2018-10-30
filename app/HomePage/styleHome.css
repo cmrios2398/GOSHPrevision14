@@ -13,3 +13,18 @@ body {
   margin-right: 1.8px;
 }
 
+
+
+div.stickyNavBottom {
+    position: sticky;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    height: 55px;
+    left: 0px;
+    bottom:0px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+  }
+
+  
