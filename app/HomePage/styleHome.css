@@ -1,0 +1,15 @@
+body {
+    /* background-image: url(Sample.jpg); */
+    background-color: rgb(255, 255, 255);
+    background-repeat:no-repeat;
+
+   background-size:cover;
+ }
+
+.icon {
+  
+  margin-left: 1.8px;
+  margin-top:9px;
+  margin-right: 1.8px;
+}
+

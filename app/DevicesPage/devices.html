@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Devices</title>
+    <link rel="stylesheet" type="text/css" href="styleDevices.css">
+
+  </head>
+  <body>
+
+
+    <script>
+      document.querySelector("button").addEventListener("click", () => {
+        window.parent.postMessage("hi", "*")
+      })
+
+      window.addEventListener("message", e => {
+        document.querySelector("button").innerText += " " + e.data
+      })
+    </script>
+
+    
+<div class="stickyNavTop"> <!-- TOP MENU -->
+  <img style = "position: absolute; height:100%; width:100%; margin-left: auto; margin-right: auto;" src="imgs/devices_title_navbar.png">
+  <img style = "float:left; position: fixed; height: 30px; width: 30px; margin-left: 10px; margin-top: 10px" src="imgs/add_btn_navbar.png">
+  <img style = "float: right; position: fixed; height: 31px; width: 31px; right: 10px; margin-top: 10px" src="imgs/edit_btn_navbar.png">
+
+</div>
+
+<div class="devices"> <!--DEVICES ROWS-->
+ <img style="width:100%" src="imgs/rows_devices.png">
+</div>
+
+<div class="stickyNavBottom"> <!-- BOTTOM MENU -->
+  <img style = "float:left; height: 41.5px; width: 43.5px;" class="icon" src="imgs/home_button_navbar.png">
+  <img style = "float:right; height: 41.5px; width: 40px;" class="icon" src="imgs/help_button_navbar.png">
+  <img style = "margin-top: 5px; height:50px; width:170px; display: block; margin-left: auto; margin-right: auto;" src="imgs/logo_navbar.png">
+
+</div>
+  </body>
+</html>

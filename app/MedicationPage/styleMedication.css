@@ -1,0 +1,45 @@
+body {
+    /* background-image: url(Sample.jpg); */
+    background-color: #3FAECC;
+    background-repeat:no-repeat;
+
+   background-size:cover;
+ }
+
+ div.stickyNavBottom {
+  position: sticky;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  height: 55px;
+  left: 0px;
+  bottom:0px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: white;
+}
+
+div.stickyNavTop {
+  
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  height: 53px;
+  left: 0px;
+  top:0px;
+  /* background-color: #35ABC9; */
+}
+
+div.devices{
+top:53px;
+  width: 100%;
+  position: absolute;
+  left:0px;
+  right:0px;
+}
+
+.icon {
+  
+  margin-left: 1.8px;
+  margin-top:9px;
+  margin-right: 1.8px;
+}
