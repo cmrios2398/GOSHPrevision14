@@ -16,6 +16,16 @@ will load the `app/example.html` page in the mock phone.
 
 This allows multiple team members to work on different app pages, without needing to modify the environment page.
 
+### disable_fullscreen param
+
+Loading the demo in fullscreen can be disabled using the `disable_fullscreen` param:
+
+```
+index.html?disable_fullscreen=true
+```
+
+This allows team members to develop the app pages without needing to run the demo in fullscreen mode.
+
 ## Attribution
 
 * `img/park_bg.jpg`: *CC0* https://pixabay.com/en/park-park-bench-leaves-leaf-autumn-1263179/

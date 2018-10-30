@@ -4,10 +4,22 @@
   --phone-border: 20px;
 }
 
-html, body, .container {
+html, body, .container, .grid {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+.container {
+  display: none;
+}
+
+body[data-fullscreen="true"] .container {
+  display: block;
+}
+
+body[data-fullscreen="true"] .landing {
+  display: none;
 }
 
 .background {
@@ -23,7 +35,7 @@ html, body, .container {
   filter: blur(var(--blur));
 }
 
-.container {
+.grid {
   display: grid;
   grid-template-columns: auto calc(var(--phone-screen-width) + var(--phone-border) * 2) auto;
   grid-template-rows: auto calc(var(--phone-screen-height) + var(--phone-border) * 2) auto;
