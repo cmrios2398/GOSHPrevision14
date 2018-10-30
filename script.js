@@ -4,10 +4,16 @@ if (app_page) {
   document.querySelector(".phone .screen").src = "app/" + app_page
 }
 
-document.querySelector(".commands button").addEventListener("click", () => {
-  document.querySelector(".phone .screen").contentWindow.postMessage("hi", "*")
-})
+// document.querySelector(".commands button").addEventListener("click", () => {
+//   document.querySelector(".phone .screen").contentWindow.postMessage("hi", "*")
+// })
+//
+// window.addEventListener("message", e => {
+//   document.querySelector(".commands button").innerText += " " + e.data
+// })
 
-window.addEventListener("message", e => {
-  document.querySelector(".commands button").innerText += " " + e.data
+document.querySelectorAll(".commands button").forEach(button => {
+  button.addEventListener("click", e => {
+    document.querySelector("body").dataset.location = e.target.dataset.location
+  })
 })

@@ -12,8 +12,8 @@ html, body, .container {
 
 .background {
   --blur: 8px;
-  background-image: url("img/park_bg.jpg");
   background-size: cover;
+  background-position: center center;
   width: calc(100% + (var(--blur) * 4));
   height: calc(100% + (var(--blur) * 4));
   top: calc(-1 * (var(--blur) * 2));
@@ -37,6 +37,7 @@ html, body, .container {
   background-position: bottom left;
   background-size: contain;
   background-repeat: no-repeat;
+  display: none;
 }
 
 .right-hand {
@@ -103,4 +104,32 @@ html, body, .container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+body[data-location="bedroom"] button[data-location="bedroom"] {
+  display: none;
+}
+
+body[data-location="bedroom"] .background {
+  background-image: url("img/bedroom_bg.jpg");
+}
+
+body[data-location="living-room"] button[data-location="living-room"] {
+  display: none;
+}
+
+body[data-location="living-room"] .background {
+  background-image: url("img/living_room_bg.jpg");
+}
+
+body[data-location="park"] button[data-location="park"] {
+  display: none;
+}
+
+body[data-location="park"] .background {
+  background-image: url("img/park_bg.jpg");
+}
+
+body[data-location="park"] .left-hand {
+  display: block;
 }
