@@ -10,6 +10,10 @@ html, body, .container, .grid {
   height: 100%;
 }
 
+body, button {
+  font-family: sans-serif;
+}
+
 .container {
   display: none;
 }
@@ -116,6 +120,24 @@ body[data-fullscreen="true"] .landing {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.commands span, .commands button {
+  color: #fff;
+  font-size: 20px;
+  margin: 0px 10px;
+}
+
+.commands button {
+  padding: 10px;
+  background: transparent;
+  border: #fff solid 1px;
+  border-radius: 10px;
+}
+
+.commands button::selection {
+  background: transparent;
+  color: #fff;
 }
 
 body[data-location="bedroom"] button[data-location="bedroom"] {
