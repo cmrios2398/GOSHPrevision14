@@ -1,35 +1,51 @@
 <!doctype html>
 <html>
   <head>
-    <title></title>
+    <title>myHealth Passport Demo</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
 
-    <div class="background">
+    <link rel="preload" as="image" href="img/bedroom_bg.jpg">
+    <link rel="preload" as="image" href="img/living_room_bg.jpg">
+    <link rel="preload" as="image" href="img/park_bg.jpg">
+  </head>
+  <body data-location="bedroom" data-fullscreen="false">
+
+    <div class="landing">
+      <button class="launch">Launch Demo</button>
     </div>
 
     <div class="container">
 
-      <div class="phone">
-        <iframe src="app/HomePage/home.html" class="screen"></iframe>
+      <div class="background">
       </div>
 
-      <div class="left-hand">
-      </div>
+      <div class="grid">
 
-      <div class="right-hand left-of-phone"> </div>
-      <div class="right-hand right-of-phone"> </div>
-      <div class="right-hand below-phone"> </div>
-      <div class="right-hand below-right-of-phone"> </div>
-      <div class="right-hand behind-phone"> </div>
+        <div class="phone">
+          <iframe src="app/HomePage/home.html" class="screen"></iframe>
+        </div>
 
-      <div class="commands">
-        <button>Send message to phone</button>
+        <div class="left-hand">
+        </div>
+
+        <div class="right-hand left-of-phone"> </div>
+        <div class="right-hand right-of-phone"> </div>
+        <div class="right-hand below-phone"> </div>
+        <div class="right-hand below-right-of-phone"> </div>
+        <div class="right-hand behind-phone"> </div>
+
+        <div class="commands">
+          <span>Go to:</span>
+          <button data-location="bedroom">Bedroom</button>
+          <button data-location="living-room">Living Room</button>
+          <button data-location="park">Park</button>
+        </div>
+
       </div>
 
     </div>
 
+    <script src="node_modules/screenfull/dist/screenfull.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
