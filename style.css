@@ -78,10 +78,18 @@ body[data-fullscreen="true"] .landing {
   border-radius: 10px;
   position: relative;
   display: none;
-  animation: google-home-appear 2s 2s both;
+  animation: google-home-appear 2s 6s both;
 }
 
-.google-home span:nth-child(2n) {
+.google-home span:nth-child(2) {
+  animation-delay: 10s;
+}
+
+.google-home span:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.google-home span:nth-child(4) {
   animation-delay: 6s;
 }
 
