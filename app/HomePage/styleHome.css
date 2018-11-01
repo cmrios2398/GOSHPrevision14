@@ -51,66 +51,59 @@ img.homeIcon{
     width: 4em; height: 4em;
     margin: -2.5em;
 }
-.circle-container img { display: block; width: 50%; }
-.deg0 { 
+.circle-container img {
     animation-name: logos_zoomout;
     animation-duration: 2000ms;
-    animation-delay: 2000ms;
+    animation-delay: 750ms;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    display: block; width: 50%; }
+.deg0 { 
+    
     transform: rotate(2deg) translate(8em) rotate(-2deg);} /* 12em = half the width of the wrapper */
 .deg45 { 
-    animation-name: logos_zoomout;
-    animation-duration: 2000ms;
-    animation-delay: 2000ms;
-    animation-iteration-count: 1;
+    
     transform: rotate(48deg) translate(11em) rotate(-48deg); }
 .deg90 { 
-    animation-name: logos_zoomout;
-    animation-duration: 2000ms;
-    animation-delay: 2000ms;
-    animation-iteration-count: 1;
+    
     transform: rotate(90deg) translate(9em) rotate(-90deg); }
 .deg135 { 
-    animation-name: logos_zoomout;
-    animation-duration: 2000ms;
-    animation-delay: 2000ms;
-    animation-iteration-count: 1;
+  
     transform: rotate(127deg) translate(10.5em) rotate(-127deg); }
 .deg180 { 
-    animation-name: logos_zoomout;
-    animation-duration: 2000ms;
-    animation-delay: 2000ms;
-    animation-iteration-count: 1;
+    
     transform: translate(-9em); }
 .deg225 { 
-    animation-name: logos_zoomout;
-    animation-duration: 2000ms;
-    animation-delay: 2000ms;
-    animation-iteration-count: 1;
+    
     transform: rotate(225deg) translate(9em) rotate(-225deg); }
 .deg270 { 
-    animation-name: logos_zoomout;
-    animation-duration: 2000ms;
-    animation-delay: 2000ms;
-    animation-iteration-count: 1;
+    
     transform: rotate(268deg) translate(9em) rotate(-268deg); }
 .deg315 { 
     transform: rotate(320deg) translate(9em) rotate(-320deg);
-    animation-name: logos_zoomout;
-    animation-duration: 2000ms;
-    animation-delay: 2000ms;
-    animation-iteration-count: 1;
+    
+   
      }
 
-
-.pulse {
+.center{
     animation-name: logos_zoomout, pulse_animation;
-    animation-duration: 1000ms, 5000ms;
-    animation-delay: 0ms, 1000ms;
+    animation-duration: 750ms, 5000ms;
+    animation-delay: 0ms, 750ms;
     transform-origin: 70% 70%, 70% 70%;
     animation-iteration-count: 1, infinite;
     animation-timing-function: linear, linear;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 45%;
+    right: 37%;
+    position: absolute;
+    
 }
+
+
 @keyframes pulse_animation {
     0% { transform: scale(1); }
     30% { transform: scale(1); }
@@ -123,6 +116,8 @@ img.homeIcon{
 }
 
 @keyframes logos_zoomout {
-    0% { transform: scale(0); }
-    100% { transform: scale(1); }
+    0% { transform: scale(0); 
+    opacity: 1;}
+    100% { transform: scale(1);
+    opacity: 1; }
 }
