@@ -58,6 +58,20 @@ body[data-fullscreen="true"] .landing {
   display: none;
 }
 
+.logo-image {
+  align-content: center;
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  width: 45%;
+}
+
+.launch-button{
+  position: absolute;
+  top: 70%;
+  left: 47%;
+}
+
 .google-home {
   z-index: -1;
   grid-column-start: 1;
