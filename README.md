@@ -1,7 +1,12 @@
-# myHealth Passport Demo
+![myHealth Passport](img/logo.png)
 
-# Demo URL: 
-  https://cmrios2398.github.io/GOSHPrevision14/?fbclid=IwAR0QDTAe79Q69TUeZZ8M8aEj3kPtrbWxDsKu3CZ30ZapDQlLaD9jAWWxKrI
+## Demo
+
+[![Demo screenshot](img/demo.png)](https://cmrios2398.github.io/GOSHPrevision14/)
+
+https://cmrios2398.github.io/GOSHPrevision14/
+
+Tested to work in Firefox and Chrome. Uses modern CSS features, so unlikely to work in other browsers.
 
 ## Development
 
