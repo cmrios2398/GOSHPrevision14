@@ -25,14 +25,6 @@ screenfull.on("change", () => {
   document.querySelector("body").dataset.fullscreen = screenfull.isFullscreen ? "true" : "false"
 })
 
-// document.querySelector(".commands button").addEventListener("click", () => {
-//   document.querySelector(".phone .screen").contentWindow.postMessage("hi", "*")
-// })
-//
-// window.addEventListener("message", e => {
-//   document.querySelector(".commands button").innerText += " " + e.data
-// })
-
 document.querySelectorAll(".commands button").forEach(button => {
   button.addEventListener("click", e => {
     document.querySelector("body").dataset.location = e.target.dataset.location

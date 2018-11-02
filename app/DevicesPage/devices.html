@@ -7,18 +7,6 @@
   </head>
   <body>
 
-
-    <script>
-      document.querySelector("button").addEventListener("click", () => {
-        window.parent.postMessage("hi", "*")
-      })
-
-      window.addEventListener("message", e => {
-        document.querySelector("button").innerText += " " + e.data
-      })
-    </script>
-
-    
 <div class="stickyNavTop"> <!-- TOP MENU -->
   <img style = "position: absolute; height:100%; width:100%; margin-left: auto; margin-right: auto;" src="imgs/devices_title_navbar.png">
   <img style = "float:left; position: fixed; height: 30px; width: 30px; margin-left: 10px; margin-top: 10px" src="imgs/add_btn_navbar.png">
